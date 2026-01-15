@@ -1,0 +1,433 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(../asset/font/Montserrat/static/Montserrat-Thin.ttf);
+    font-weight: 100;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(../asset/font/Montserrat/static/Montserrat-ExtraLight.ttf);
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(../asset/font/Montserrat/static/Montserrat-Light.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(../asset/font/Montserrat/static/Montserrat-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(../asset/font/Montserrat/static/Montserrat-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(../asset/font/Montserrat/static/Montserrat-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(../asset/font/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(../asset/font/Montserrat/static/Montserrat-ExtraBold.ttf);
+    font-weight: 800;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(../asset/font/Montserrat/static/Montserrat-Black.ttf);
+    font-weight: 900;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+
+.flex{
+    display: flex;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+@media screen and (min-width: 375px) {
+    .container{
+        width: 90%;
+    }
+}
+@media screen and (min-width: 768px) {
+    .container{
+        width: 730px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .container{
+        width: 980px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .container{
+        width: 1300px;
+    }
+    
+}
+
+
+/* ---------------------------------------------------HEADER--------------------------------------------------------------- */
+.head-bg{
+    background: url(../asset/img/background-header.png);
+    background-position-x:center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+
+.logo{
+    margin: auto;
+    padding: 20px 0;
+    width: 33%;
+    text-align: center;
+
+    
+}
+.logo img{
+    height: auto;
+    width: 125px;
+}
+@media screen and (min-width: 768px) {
+    .logo img{
+        width: 220px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .logo img{
+        width: 280px;
+    }
+}
+nav{
+    background: #136731;
+    padding: 5px 0;
+}
+
+nav ul{
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+@media screen and (min-width: 768px) {
+    nav ul{
+        flex-direction: row;
+        row-gap: 0;
+        justify-content: space-evenly;
+    }
+    
+}
+
+nav li{
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    background-color: #709700;
+    border-radius: 7px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+/* ---------------------------------------------------INDEX--------------------------------------------------------------- */
+.main-title{
+    font-weight: 200;
+    color: #709700;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 15px;
+    margin-bottom: 30px;
+}
+
+.index p{
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 15px;
+    line-height: 35px;
+}
+
+.index a{
+    color: #709700;
+}
+
+.parallax{
+    background: url(../asset/img/tree.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 400px;
+}
+
+.picto{
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 15px;
+
+}
+@media screen and (min-width: 768px) {
+    .picto{
+        flex-direction: row;
+    }
+    
+}
+.picto figure{
+    text-align: center;
+    margin: 10px 0;
+}
+
+.picto img{
+    width: 115px;
+    height: auto;
+    margin: auto;
+}
+@media screen and (min-width: 1024px) {
+    .picto img{
+        width: 200px;
+    }
+    
+}
+.picto-1{
+    width: 33.33%;
+}
+.picto-2{
+    width: 33.33%;
+}
+.picto-3{
+    width: 33.33%;
+}
+
+/* ------------------------------------------------------MAIN------------------------------------------------------------ */
+.media-flex{
+    flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+    .media-flex{
+        flex-direction: row;
+    }
+    
+}
+.recyclage, .economie, .circuit, .contact{
+    margin: 50px auto;
+}
+
+.sidebar{
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .corps{
+    width: 70%;
+    }
+    .sidebar{
+    width: 30%;
+    padding-left: 20px;
+    }
+}
+
+
+.sidebar a{
+    text-decoration: none;
+}
+.sidebar figcaption{
+    color: black;
+}
+
+.title{
+    font-weight: 200;
+    color: #709700;
+    font-size: 2.5rem;
+    margin: 15px 0 30px 0;
+}
+
+.recyclage p, .economie p, .circuit p{
+    padding: 15px 7px;
+    line-height: 25px;
+}
+
+.recyclage li{
+    margin-left: 100px;
+}
+.recyclage a, .economie a, .circuit a{
+    color: #709700;
+}
+
+.gallery-img{
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+#fancy-1{
+    width: 48%;
+}
+#fancy-2{
+    width: 48%;
+}
+#fancy-3{
+    width: 48%;
+}
+
+#recycle-img-1 {
+    border: 2px solid #136731;
+    padding: 0;
+    margin: 0;
+}
+#recycle-img-2{
+    border: 2px solid #136731;
+    padding: 0;
+    margin: 0;
+}
+#recycle-img-3{
+    border: 2px solid #136731;
+    padding: 0;
+    margin: 0;
+} 
+
+.recyclage img, .economie img, .circuit img, .contact img{
+    margin: 15px 0;
+    padding-right: 25px;
+    width: 100%;
+    height: auto;
+}
+
+.paragraphe-list{
+    margin: 20px 0;
+}
+
+.economie h3{
+    margin: 15px 0;
+}
+
+.economie li{
+    margin-left: 50px;
+}
+
+
+.form form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.inp-form{ 
+    background-color: rgba(128, 128, 128, 0.4);
+    max-width: 90%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 3px 10px 10px 0;
+}
+
+.form label{
+    margin-top: 10px;
+}
+
+.btn-form{
+    padding: 10px 20px;
+    margin: 15px 20px 15px 0;
+    color: white;
+    background-color: #136731;
+    border: none;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.btn-dom:hover, .btn-form:hover{
+    background-color: #709700;
+    cursor: pointer;
+}
+/* ------------------------------------------------------LE FOOTER ------------------------------------------------------ */
+
+
+.info{
+    background: #136731;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.info-groupe{
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    .info-groupe{
+        flex-direction: row;
+        padding-left: 0;
+    }
+    
+}
+
+.info-info{
+    width: 100%;
+}
+
+.info-menu{
+    width: 100%;
+}
+
+.info-png{
+    width: 100%;
+}
+
+
+
+.info li{
+    list-style: none;
+    font-weight: 300;
+    font-size: calc(0.5rem + 1vw);
+}
+
+@media screen and (min-width: 768px) {
+    .info li{
+        font-weight: 400;
+    }
+    
+}
+
+.info a{
+    text-decoration: none;
+    color: white;
+}
+
+.info h3{
+    margin: 25px 0;
+    font-weight: 200;
+    font-size: small;
+}
+@media screen and (min-width: 768px) {
+    .info h3{
+        font-weight: 300;
+        font-size: 1.5rem;
+    }
+    
+}
+
+.info-png img{
+    width: 22px;
+    height: 22px;
+}
